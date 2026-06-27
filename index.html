@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    Free shipping on orders over $50 &nbsp;&middot;&nbsp; New arrivals every Friday
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="nav-logo bebas">SneakerHub</span>
+
+    <div class="nav-links">
+      <a href="#">New Arrivals</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Sale</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="#">Login</a>
+      <a href="#">Cart (0)</a>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+        </svg>
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1600&q=80" alt="Featured sneaker">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">New Season &mdash; 2026</p>
+      <h1 class="hero-title bebas">Just Move<br>Faster.</h1>
+      <p class="hero-sub">Premium kicks for every stride &mdash; from the track to the street.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-white">Shop Now</a>
+        <a href="#" class="btn btn-outline-white">View All</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title bebas">Shop by Category</h2>
+    </div>
+    <div class="category-grid">
+
+      <a href="#" class="category-card">
+        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80" alt="Running shoes">
+        <div class="category-overlay"></div>
+        <div class="category-label">
+          <div class="name">Running</div>
+          <div class="count">48 styles</div>
+        </div>
+      </a>
+
+      <a href="#" class="category-card">
+        <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=600&q=80" alt="Basketball shoes">
+        <div class="category-overlay"></div>
+        <div class="category-label">
+          <div class="name">Basketball</div>
+          <div class="count">32 styles</div>
+        </div>
+      </a>
+
+      <a href="#" class="category-card">
+        <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=600&q=80" alt="Lifestyle shoes">
+        <div class="category-overlay"></div>
+        <div class="category-label">
+          <div class="name">Lifestyle</div>
+          <div class="count">67 styles</div>
+        </div>
+      </a>
+
+      <a href="#" class="category-card">
+        <img src="https://images.unsplash.com/photo-1542219550-37153d387c27?w=600&q=80" alt="Training shoes">
+        <div class="category-overlay"></div>
+        <div class="category-label">
+          <div class="name">Training</div>
+          <div class="count">24 styles</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title bebas">Featured Products</h2>
+      <button id="view-more-btn" class="section-link" style="display:none; background:none; border:none; cursor:pointer;">
+        View More
+    </button>
+    </div>
+    <div class="product-grid" id="product-grid">
+
+      
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-text">
+      <p class="cta-eyebrow">Members Only</p>
+      <h2 class="cta-title bebas">Join the Hub.<br>Get More.</h2>
+      <p class="cta-sub">Sign up free for early access to new drops and member-only deals.</p>
+      <a href="#" class="btn btn-white">Create Account</a>
+    </div>
+    <img class="cta-image" src="https://images.unsplash.com/photo-1556906781-9a412961a28d?w=800&q=80" alt="Sneaker">
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand bebas">SneakerHub</div>
+        <p class="footer-tagline">Premium sneakers for every occasion. Your next favourite pair is here.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Products</div>
+        <a href="#">New Arrivals</a>
+        <a href="#">Men's</a>
+        <a href="#">Women's</a>
+        <a href="#">Sale</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Account</div>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#">My Cart</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Help</div>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Returns</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 SneakerHub &mdash; Built by Mon Chivorn &middot; SmallLab Cohort 3</span>
+      <span>Final Project</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
