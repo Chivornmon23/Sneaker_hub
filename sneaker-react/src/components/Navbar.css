@@ -1,0 +1,95 @@
+/* ============================
+   NAVBAR
+============================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 40px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.25s ease;
+}
+
+.navbar__logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar__links a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: color 0.2s;
+}
+
+.navbar__links a:hover {
+  color: var(--text-secondary);
+}
+
+.navbar__actions {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navbar__actions a {
+  font-size: 13px;
+  color: var(--text-primary);
+  transition: color 0.2s;
+}
+
+.navbar__actions a:hover {
+  color: var(--text-secondary);
+}
+
+.navbar__actions .cart {
+  font-weight: 600;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: background 0.2s, transform 0.15s;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-secondary);
+  transform: scale(1.06);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+}
