@@ -1,0 +1,171 @@
+/* ============================
+   HOME PAGE
+============================ */
+
+/* ── Shared section layout ── */
+.section {
+  padding: 64px 40px;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.section__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.section__link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  transition: color 0.2s;
+}
+
+.section__link:hover {
+  color: var(--text-secondary);
+}
+
+/* ── Categories grid ── */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* ── Products grid ── */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-grid__status {
+  grid-column: 1 / -1;
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 20px 0;
+}
+
+.product-grid__error {
+  grid-column: 1 / -1;
+  font-size: 14px;
+  color: var(--accent);
+  padding: 20px 0;
+}
+
+/* ── CTA Banner ── */
+.cta-banner {
+  margin: 0 40px 64px;
+  background: #111;
+  border-radius: 4px;
+  padding: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-banner__text {
+  max-width: 480px;
+}
+
+.cta-banner__eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.cta-banner__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 0.95;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cta-banner__sub {
+  font-size: 15px;
+  color: #a1a1a1;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.cta-banner__image {
+  width: 380px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.btn {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn--white {
+  background: white;
+  color: #111;
+}
+
+.btn--white:hover {
+  background: #e5e5e5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .cta-banner {
+    margin: 0 20px 48px;
+    padding: 40px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-banner__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
